@@ -11,7 +11,10 @@
     "framer-motion": "^11.0.0",
     "recharts": "^2.15.0"
   },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  },
   "scripts": {
-    "build": "mkdir -p build && cp index.html index.tsx App.tsx metadata.json build/ && cp -r pages components build/ 2>/dev/null || true"
+    "build": "esbuild index.tsx --bundle --outfile=build/index.js --format=esm --minify --external:react --external:react-dom --external:react-router-dom --external:lucide-react --external:recharts --external:framer-motion && cp index.html metadata.json build/ && sed -i 's/index.tsx/index.js/g' build/index.html"
   }
 }
