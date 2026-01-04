@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Send, Globe, MessageSquare, CheckCircle2 } from 'lucide-react';
+import { Mail, MapPin, Send, Globe, MessageSquare, CheckCircle2, Phone } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -36,6 +36,15 @@ const Contact: React.FC = () => {
                 <div>
                   <h4 className="text-white font-bold text-lg mb-1">Email Us</h4>
                   <p className="text-slate-400">info@projectstorm.org</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-6">
+                <div className="p-4 bg-indigo-500/10 rounded-2xl text-indigo-400">
+                  <Phone size={28} />
+                </div>
+                <div>
+                  <h4 className="text-white font-bold text-lg mb-1">Call Us</h4>
+                  <p className="text-slate-400">+1 (713) 526-1700</p>
                 </div>
               </div>
               <div className="flex items-start space-x-6">

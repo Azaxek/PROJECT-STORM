@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Menu, X, Radio, Database, ShieldAlert, 
   Map as MapIcon, Users, MessageSquare, 
-  ChevronRight, Globe, Wind, Zap, Satellite
+  ChevronRight, Globe, Wind, Zap, Satellite, Phone
 } from 'lucide-react';
 
 import Home from './pages/Home';
@@ -138,6 +138,7 @@ const Footer = () => (
           <h4 className="text-white font-bold mb-6">Contact</h4>
           <ul className="space-y-4 text-slate-400">
             <li>Email: info@projectstorm.org</li>
+            <li>Phone: +1 (713) 526-1700</li>
             <li>HQ: Houston, TX (Near NASA JSC)</li>
             <li className="flex space-x-4 pt-2">
               <a href="#" className="hover:text-cyan-400"><Globe size={20} /></a>
