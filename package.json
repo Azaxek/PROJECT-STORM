@@ -15,6 +15,6 @@
     "esbuild": "^0.25.0"
   },
   "scripts": {
-    "build": "esbuild index.tsx --bundle --outfile=build/index.js --format=esm --minify --external:react --external:react-dom --external:react-router-dom --external:lucide-react --external:recharts --external:framer-motion && cp index.html metadata.json build/ && sed -i 's/index.tsx/index.js/g' build/index.html"
+    "build": "esbuild index.tsx --bundle --outfile=build/index.js --format=esm --minify --external:react --external:react-dom --external:react-router-dom --external:lucide-react --external:recharts --external:framer-motion && cp index.html metadata.json build/ && cp public/*.png build/ && sed -i 's/index.tsx/index.js/g' build/index.html"
   }
 }
