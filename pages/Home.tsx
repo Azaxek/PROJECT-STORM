@@ -103,6 +103,53 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Proof Images Section */}
+      <section className="py-32 relative overflow-hidden bg-slate-950">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Project <span className="text-gradient">Documentation</span>
+            </h2>
+            <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+              Visual proof of our satellite detection network and infrastructure
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {[
+              { src: '/image5.png', alt: 'Project STORM Documentation 1' },
+              { src: '/image7.png', alt: 'Project STORM Documentation 2' },
+              { src: '/image10.png', alt: 'Project STORM Documentation 3' },
+              { src: '/image11.png', alt: 'Project STORM Documentation 4' },
+            ].map((image, index) => (
+              <motion.div
+                key={index}
+                initial={{ y: 30, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="relative group"
+              >
+                <div className="absolute -inset-2 bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative rounded-2xl overflow-hidden glass border border-white/10">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-[500px] object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Founder Spotlight */}
       <section className="py-32 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
