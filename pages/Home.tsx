@@ -160,16 +160,11 @@ const Home: React.FC = () => {
             className="relative group"
           >
             <div className="absolute -inset-4 bg-gradient-to-tr from-cyan-500 to-indigo-500 rounded-3xl blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
-            <div className="relative rounded-3xl overflow-hidden glass border-white/20">
-              <img 
-                src="https://picsum.photos/id/1012/800/800" 
-                alt="Aryav Agrawal"
-                className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-700"
-              />
-            </div>
-            <div className="absolute bottom-6 left-6 right-6 p-6 glass-dark rounded-2xl border border-white/10">
-              <h3 className="text-2xl font-bold text-white mb-1">Aryav Agrawal</h3>
-              <p className="text-cyan-400 font-medium">Founder & CEO</p>
+            <div className="relative rounded-3xl p-12 glass border-white/20 flex items-center justify-center min-h-[400px]">
+              <div className="text-center">
+                <h3 className="text-4xl md:text-5xl font-bold text-white mb-3">Aryav Agrawal</h3>
+                <p className="text-cyan-400 font-medium text-xl">Founder & CEO</p>
+              </div>
             </div>
           </motion.div>
 
