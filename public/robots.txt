@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://earthapplicationsofspacetechnologyproject.com/sitemap.xml
+Sitemap: https://www.earthapplicationsofspacetechnologyproject.com/sitemap.xml
