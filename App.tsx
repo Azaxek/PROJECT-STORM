@@ -34,8 +34,8 @@ const Navbar = () => {
             <div className="p-2 bg-cyan-500/20 rounded-lg group-hover:bg-cyan-500/40 transition-colors">
               <Satellite className="w-6 h-6 text-cyan-400" />
             </div>
-            <span className="text-2xl font-bold tracking-tight text-white">
-              PROJECT <span className="text-cyan-400">STORM</span>
+            <span className="text-xl font-bold tracking-tight text-white">
+              Earth Applications of <span className="text-cyan-400">Space Technology Project</span>
             </span>
           </Link>
 
@@ -116,8 +116,8 @@ const Footer = () => (
         <div className="col-span-1 md:col-span-2">
           <div className="flex items-center space-x-2 mb-6">
             <Satellite className="w-8 h-8 text-cyan-400" />
-            <span className="text-3xl font-bold tracking-tight text-white">
-              PROJECT <span className="text-cyan-400">STORM</span>
+            <span className="text-2xl font-bold tracking-tight text-white">
+              Earth Applications of <span className="text-cyan-400">Space Technology Project</span>
             </span>
           </div>
           <p className="text-slate-400 max-w-md leading-relaxed">
@@ -137,7 +137,7 @@ const Footer = () => (
         <div>
           <h4 className="text-white font-bold mb-6">Contact</h4>
           <ul className="space-y-4 text-slate-400">
-            <li>Email: info@projectstorm.org</li>
+            <li>Email: info@earthspaceapps.org</li>
             <li>Phone: +1 (713) 526-1700</li>
             <li>HQ: Houston, TX (Near NASA JSC)</li>
             <li className="flex space-x-4 pt-2">
@@ -149,7 +149,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
-        <p>&copy; {new Date().getFullYear()} Project STORM. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Earth Applications of Space Technology Project. All rights reserved.</p>
         <p>Founded by Aryav Agrawal</p>
       </div>
     </div>

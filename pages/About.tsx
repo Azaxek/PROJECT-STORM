@@ -32,21 +32,21 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="max-w-3xl mb-24">
-          <motion.h1 
+          <motion.h1
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             className="text-5xl md:text-6xl font-bold mb-8"
           >
-            The Mission of <span className="text-gradient">Project STORM</span>
+            The Mission of <span className="text-gradient">Earth Applications of Space Technology Project</span>
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.1 }}
             className="text-xl text-slate-400 leading-relaxed"
           >
-            Project STORM stands at the intersection of satellite engineering and humanitarian service. 
-            By leveraging home-based detection modules, we provide a granular view of meteorology 
+            Earth Applications of Space Technology Project stands at the intersection of satellite engineering and humanitarian service.
+            By leveraging home-based detection modules, we provide a granular view of meteorology
             that traditional systems miss.
           </motion.p>
         </div>
@@ -74,14 +74,14 @@ const About: React.FC = () => {
         {/* Innovation Section */}
         <div className="relative glass rounded-[3rem] p-12 lg:p-20 overflow-hidden mb-32 border border-white/20">
           <div className="absolute right-0 top-0 w-1/2 h-full hidden lg:block">
-            <img 
-              src="https://picsum.photos/id/122/800/800?grayscale" 
+            <img
+              src="https://picsum.photos/id/122/800/800?grayscale"
               className="w-full h-full object-cover opacity-20"
               alt="Technology"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/20 to-transparent" />
           </div>
-          
+
           <div className="relative z-10 max-w-2xl">
             <h2 className="text-4xl font-bold mb-8">Technical Innovation</h2>
             <div className="space-y-8">
@@ -118,24 +118,24 @@ const About: React.FC = () => {
 
         {/* Impact Stat */}
         <div className="text-center py-20">
-            <p className="text-cyan-400 font-bold uppercase tracking-widest mb-4">Project Growth</p>
-            <h2 className="text-5xl md:text-7xl font-bold text-white mb-8">Expanding Horizons</h2>
-            <div className="flex flex-wrap justify-center gap-12">
-                <div>
-                    <div className="text-4xl font-bold text-gradient">270+</div>
-                    <p className="text-slate-500">Detectors Built</p>
-                </div>
-                <div className="w-px h-16 bg-white/10 hidden md:block"></div>
-                <div>
-                    <div className="text-4xl font-bold text-gradient">15</div>
-                    <p className="text-slate-500">Suburbs Monitored</p>
-                </div>
-                <div className="w-px h-16 bg-white/10 hidden md:block"></div>
-                <div>
-                    <div className="text-4xl font-bold text-gradient">25K</div>
-                    <p className="text-slate-500">Points Processed</p>
-                </div>
+          <p className="text-cyan-400 font-bold uppercase tracking-widest mb-4">Project Growth</p>
+          <h2 className="text-5xl md:text-7xl font-bold text-white mb-8">Expanding Horizons</h2>
+          <div className="flex flex-wrap justify-center gap-12">
+            <div>
+              <div className="text-4xl font-bold text-gradient">270+</div>
+              <p className="text-slate-500">Detectors Built</p>
             </div>
+            <div className="w-px h-16 bg-white/10 hidden md:block"></div>
+            <div>
+              <div className="text-4xl font-bold text-gradient">15</div>
+              <p className="text-slate-500">Suburbs Monitored</p>
+            </div>
+            <div className="w-px h-16 bg-white/10 hidden md:block"></div>
+            <div>
+              <div className="text-4xl font-bold text-gradient">25K</div>
+              <p className="text-slate-500">Points Processed</p>
+            </div>
+          </div>
         </div>
       </div>
     </motion.div>

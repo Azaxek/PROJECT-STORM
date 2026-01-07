@@ -1,5 +1,5 @@
 {
-  "name": "Project STORM",
+  "name": "Earth Applications of Space Technology Project",
   "description": "Satellite Technology for Observing & Responding to Meteorology. A humanitarian platform founded by Aryav Agrawal focusing on early storm detection and response using advanced satellite processing.",
   "requestFramePermissions": [
     "geolocation"

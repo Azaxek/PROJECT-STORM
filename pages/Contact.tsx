@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-bold text-lg mb-1">Email Us</h4>
-                  <p className="text-slate-400">info@projectstorm.org</p>
+                  <p className="text-slate-400">info@earthspaceapps.org</p>
                 </div>
               </div>
               <div className="flex items-start space-x-6">
@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
             <div className="absolute -inset-4 bg-gradient-to-tr from-cyan-500/10 to-indigo-500/10 rounded-[2rem] blur-2xl" />
             <div className="relative glass p-10 rounded-[2rem] border border-white/20">
               {submitted ? (
-                <motion.div 
+                <motion.div
                   initial={{ scale: 0.9, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   className="h-full flex flex-col items-center justify-center text-center py-20"
@@ -92,32 +92,32 @@ const Contact: React.FC = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-slate-300 ml-1">Full Name</label>
-                    <input 
+                    <input
                       required
-                      type="text" 
+                      type="text"
                       placeholder="John Doe"
                       className="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all"
                     />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-slate-300 ml-1">Email Address</label>
-                    <input 
+                    <input
                       required
-                      type="email" 
+                      type="email"
                       placeholder="john@example.com"
                       className="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all"
                     />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-slate-300 ml-1">Message</label>
-                    <textarea 
+                    <textarea
                       required
                       rows={5}
                       placeholder="Tell us how you'd like to get involved..."
                       className="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all resize-none"
                     />
                   </div>
-                  <button 
+                  <button
                     type="submit"
                     className="w-full py-4 bg-cyan-600 hover:bg-cyan-500 text-white rounded-xl font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-cyan-900/40 active:scale-[0.98]"
                   >

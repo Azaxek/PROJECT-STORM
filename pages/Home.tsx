@@ -2,9 +2,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { 
-  ArrowRight, Shield, Zap, Radio, Globe, 
-  MapPin, Database, Satellite, Wind 
+import {
+  ArrowRight, Shield, Zap, Radio, Globe,
+  MapPin, Database, Satellite, Wind
 } from 'lucide-react';
 import StatsPanel from '../components/StatsPanel';
 
@@ -21,8 +21,8 @@ const Home: React.FC = () => {
         {/* Background Image/Video Placeholder */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/80 to-slate-950 z-10" />
-          <img 
-            src="https://picsum.photos/id/111/1920/1080?grayscale" 
+          <img
+            src="https://picsum.photos/id/111/1920/1080?grayscale"
             className="w-full h-full object-cover opacity-30"
             alt="Space Background"
           />
@@ -38,8 +38,8 @@ const Home: React.FC = () => {
             <Satellite className="w-4 h-4 mr-2" />
             Empowering Houston Communities
           </motion.div>
-          
-          <motion.h1 
+
+          <motion.h1
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3 }}
@@ -47,30 +47,30 @@ const Home: React.FC = () => {
           >
             Harnessing Space Technology for <span className="text-gradient">Humanitarian Meteorology</span>
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4 }}
             className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed"
           >
-            Project STORM uses a decentralized network of 270 home satellite detectors to monitor and respond to extreme weather events with unprecedented precision.
+            Earth Applications of Space Technology Project uses a decentralized network of 270 home satellite detectors to monitor and respond to extreme weather events with unprecedented precision.
           </motion.p>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-6"
           >
-            <Link 
+            <Link
               to="/about"
               className="group px-8 py-4 bg-white text-slate-950 rounded-full font-bold text-lg flex items-center transition-all hover:bg-cyan-400 hover:scale-105 active:scale-95 shadow-xl"
             >
               Learn More
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
             </Link>
-            <Link 
+            <Link
               to="/data"
               className="px-8 py-4 glass border-white/20 text-white rounded-full font-bold text-lg flex items-center transition-all hover:bg-white/10 active:scale-95"
             >
@@ -80,14 +80,14 @@ const Home: React.FC = () => {
         </div>
 
         {/* Floating Icons for 3D feel */}
-        <motion.div 
+        <motion.div
           animate={{ y: [0, -20, 0] }}
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           className="absolute left-[10%] top-[30%] hidden lg:block opacity-40 text-cyan-400"
         >
           <Wind size={64} />
         </motion.div>
-        <motion.div 
+        <motion.div
           animate={{ y: [0, 20, 0] }}
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
           className="absolute right-[15%] top-[20%] hidden lg:block opacity-40 text-indigo-400"
@@ -177,12 +177,12 @@ const Home: React.FC = () => {
               Driven by <span className="text-gradient">Humanitarian Innovation</span>
             </h2>
             <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-              Founded near the NASA Johnson Space Center in Houston, Project STORM was born from a realization that centralized meteorological data often misses localized humanitarian emergencies.
+              Founded near the NASA Johnson Space Center in Houston, Earth Applications of Space Technology Project was born from a realization that centralized meteorological data often misses localized humanitarian emergencies.
             </p>
             <p className="text-slate-400 text-lg mb-12 leading-relaxed">
               Aryav Agrawal lead the initiative to build 270 satellite detectors in neighborhoods surrounding the space center, creating one of the most dense weather-monitoring clusters in the world.
             </p>
-            <Link 
+            <Link
               to="/team"
               className="inline-flex items-center text-cyan-400 font-bold text-lg hover:text-cyan-300 transition-colors"
             >

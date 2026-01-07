@@ -1,13 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, 
+import {
+  BarChart, Bar, XAxis, YAxis, CartesianGrid,
   Tooltip, ResponsiveContainer, AreaChart, Area,
   LineChart, Line
 } from 'recharts';
-import { 
-  Map as MapIcon, Activity, Wind, CloudRain, 
+import {
+  Map as MapIcon, Activity, Wind, CloudRain,
   AlertTriangle, Filter, Search, Satellite,
   Database, ShieldAlert
 } from 'lucide-react';
@@ -48,11 +48,11 @@ const DataCenter: React.FC = () => {
           <div>
             <h1 className="text-3xl font-bold text-white mb-2 flex items-center">
               <Activity className="mr-3 text-cyan-400" />
-              STORM Live Monitoring
+              Live Monitoring
             </h1>
             <p className="text-slate-400 text-sm">Real-time cluster data from 270 detectors across Houston.</p>
           </div>
-          
+
           <div className="flex flex-wrap items-center gap-4">
             <div className="glass px-4 py-2 rounded-xl flex items-center space-x-3 border-white/20">
               <Database className="text-cyan-400" size={18} />
@@ -60,13 +60,13 @@ const DataCenter: React.FC = () => {
               <span className="text-white font-mono font-bold">{simulatedPoints.toLocaleString()}</span>
             </div>
             <div className="flex glass rounded-xl overflow-hidden border-white/20">
-              <button 
+              <button
                 onClick={() => setActiveTab('map')}
                 className={`px-4 py-2 flex items-center gap-2 text-sm font-bold transition-colors ${activeTab === 'map' ? 'bg-cyan-600 text-white' : 'text-slate-400 hover:text-white'}`}
               >
                 <MapIcon size={16} /> Cluster Map
               </button>
-              <button 
+              <button
                 onClick={() => setActiveTab('charts')}
                 className={`px-4 py-2 flex items-center gap-2 text-sm font-bold transition-colors ${activeTab === 'charts' ? 'bg-cyan-600 text-white' : 'text-slate-400 hover:text-white'}`}
               >
@@ -90,10 +90,10 @@ const DataCenter: React.FC = () => {
                   <div className="space-y-3">
                     {['All Detectors', 'High Intensity', 'Low Battery', 'Warning Areas'].map((f) => (
                       <label key={f} className="flex items-center space-x-3 cursor-pointer group">
-                        <input 
-                          type="radio" 
-                          name="filter" 
-                          checked={filter === f} 
+                        <input
+                          type="radio"
+                          name="filter"
+                          checked={filter === f}
                           onChange={() => setFilter(f)}
                           className="w-4 h-4 accent-cyan-400 bg-slate-800 border-white/20 rounded"
                         />
@@ -141,14 +141,14 @@ const DataCenter: React.FC = () => {
                   <AreaChart data={data}>
                     <defs>
                       <linearGradient id="colorInt" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="5%" stopColor="#22d3ee" stopOpacity={0.3}/>
-                        <stop offset="95%" stopColor="#22d3ee" stopOpacity={0}/>
+                        <stop offset="5%" stopColor="#22d3ee" stopOpacity={0.3} />
+                        <stop offset="95%" stopColor="#22d3ee" stopOpacity={0} />
                       </linearGradient>
                     </defs>
                     <CartesianGrid strokeDasharray="3 3" stroke="#ffffff10" />
                     <XAxis dataKey="time" stroke="#94a3b8" fontSize={12} />
                     <YAxis stroke="#94a3b8" fontSize={12} />
-                    <Tooltip 
+                    <Tooltip
                       contentStyle={{ backgroundColor: '#0f172a', border: '1px solid #ffffff20', borderRadius: '12px' }}
                       itemStyle={{ color: '#22d3ee' }}
                     />
@@ -164,7 +164,7 @@ const DataCenter: React.FC = () => {
                     <CartesianGrid strokeDasharray="3 3" stroke="#ffffff10" />
                     <XAxis dataKey="time" stroke="#94a3b8" fontSize={12} />
                     <YAxis stroke="#94a3b8" fontSize={12} />
-                    <Tooltip 
+                    <Tooltip
                       contentStyle={{ backgroundColor: '#0f172a', border: '1px solid #ffffff20', borderRadius: '12px' }}
                       itemStyle={{ color: '#818cf8' }}
                     />
